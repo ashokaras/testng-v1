@@ -6,6 +6,8 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import static utilities.WebDriverActions.driver;
+
 public class ExtentReportManager {
 
     private static ExtentReports extent;
@@ -29,15 +31,15 @@ public class ExtentReportManager {
     }
 
     public static void stepPass(String reportStatement) {
-        test.pass(reportStatement);
+        test.pass(reportStatement, ScreenshotUtils.reportScreenshot(driver));
     }
 
     public static void stepFail(String reportStatement) {
-        test.fail(reportStatement);
+        test.fail(reportStatement, ScreenshotUtils.reportScreenshot(driver));
     }
 
     public static void stepInfo(String reportStatement) {
-        test.info(reportStatement);
+        test.info(reportStatement, ScreenshotUtils.reportScreenshot(driver));
     }
 
     @AfterSuite
