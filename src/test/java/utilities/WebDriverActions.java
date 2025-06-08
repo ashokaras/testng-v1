@@ -30,8 +30,14 @@ public class WebDriverActions extends ExtentReportManager {
     }
 
     public void clickElementByJS(WebDriver driver, WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].click();", element);
+        try {
+            JavascriptExecutor js = (JavascriptExecutor) driver;
+            js.executeScript("arguments[0].click();", element);
+            stepInfo("Click action performed successfully.");
+        } catch (Exception e) {
+            e.printStackTrace();
+            stepFail("Click action was not successful.");
+        }
     }
 
     public Boolean isDisplayed(String xpath) {

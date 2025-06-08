@@ -30,13 +30,13 @@ public class TestCases_1 extends WebDriverUtilities {
         functionalitiesPage = new FunctionalitiesPage(localDriver);
     }
 
-//    @Test
-//    public void TC_1() {
-//        createTest("Test Case 1");
-//        homePage.selectListOption("A/B Testing");
-//        navigateToURL("https://the-internet.herokuapp.com/");
-//        waitUntilElementDisplayed(lbl_homePageTitle, 5);
-//    }
+    @Test
+    public void TC_1() {
+        createTest("Test Case 1");
+        homePage.selectListOption("A/B Testing");
+        navigateToURL("https://the-internet.herokuapp.com/");
+        waitUntilElementDisplayed(lbl_homePageTitle, 5);
+    }
 
     @Test
     public void TC_2() {
