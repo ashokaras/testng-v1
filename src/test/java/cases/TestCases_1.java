@@ -20,7 +20,8 @@ public class TestCases_1 extends WebDriverUtilities {
     HomePage homePage;
     FunctionalitiesPage functionalitiesPage;
 
-    @FindBy(xpath = "//h1[@class='heading']") private WebElement lbl_homePageTitle;
+    @FindBy(xpath = "//h1[@class='heading']")
+    private WebElement lbl_homePageTitle;
 
     @BeforeMethod
     public void setup() {

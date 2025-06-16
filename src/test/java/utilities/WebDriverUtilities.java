@@ -28,5 +28,4 @@ public class WebDriverUtilities extends WebDriverActions {
         deleteScreenshotsFolder("screenshots");
     }
 
-
 }
