@@ -3,8 +3,6 @@ name: Java Selenium TestNG on Windows with WebDriverManager (Scheduled)
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
   schedule:
     - cron: '0 2 * * *'  # Every day at 2:00 AM UTC
 
