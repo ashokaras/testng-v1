@@ -29,7 +29,7 @@ public class ScreenshotUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return dest.getAbsolutePath();
+        return "./screenshots/" + fileName;
     }
 
     public static Media reportScreenshot(WebDriver driver) {
