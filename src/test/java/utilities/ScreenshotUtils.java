@@ -19,7 +19,7 @@ public class ScreenshotUtils {
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         String random = String.valueOf(new Random().nextInt(1000));
         String fileName = "Screenshot_" + timestamp + "_" + random + ".png";
-        String screenshotDir = System.getProperty("user.dir") + "/screenshots/";
+        String screenshotDir = System.getProperty("user.dir") + "test-output/screenshots/";
         File dest = new File(screenshotDir + fileName);
 
         try {
