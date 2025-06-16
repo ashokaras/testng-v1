@@ -25,7 +25,7 @@ public class WebDriverUtilities extends WebDriverActions {
 
     @BeforeSuite
     public void setupSuite() {
-        deleteScreenshotsFolder("screenshots");
+        deleteScreenshotsFolder("test-output/screenshots");
     }
 
 }
